@@ -1,16 +1,15 @@
 #include<stdio.h>
 void main(void)
 {
-	int num ,ch_num;
-	printf("enter any number : ");
-	scanf("%d",&num);
-	ch_num=num/2;
-	if(num == (ch_num * 2))
+	 int num;
+	 printf("enter any number : ");
+	 scanf("%d",&num);
+	if((num & 1) == 0)
 	{
-		printf("%d is even",num);
+		printf("%d is even number",num);
 	}
-	else
-	{
-        printf("%d is odd",num);	
-	}
+	else{printf("%d is odd number",num);}
+		
+	
+
 }
